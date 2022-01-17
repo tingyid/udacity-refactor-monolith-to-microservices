@@ -1,35 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: udagram
+  name: frontend
   labels:
-    app: udagram
+    app: frontend
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: udagram
+      app: frontend
   template:
     metadata:
       labels:
-        app: udagram
+        app: frontend
     spec:
       containers:
-      - name: udagram-frontend
-        image: tdong2010/udagram-frontend
+      - name: frontend
+        image: tdong2010/udagram-frontend:v1
         ports: 
         - containerPort: 80
-      - name: udagram-api-feed
-        image: tdong2010/udagram-api-feed
-        ports: 
-        - containerPort: 80
-      - name: udagram-api-user
-        image: tdong2010/udagram-api-user
-        ports: 
-        - containerPort: 80
-      - name: reverseproxy
-        image: tdong2010/reverseproxy
-        ports: 
-        - containerPort: 80
-
-
+  

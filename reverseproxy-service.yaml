@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: udagram
+  name: reverseproxy
   labels:
-    run: udagram
+    run: reverseproxy
 spec:
   ports:
   - port: 80
     protocol: TCP
   selector:
-    run: udagram
+    run: reverseproxy
 
