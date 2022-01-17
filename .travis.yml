@@ -22,7 +22,7 @@ install:
   - docker tag udagram-api-feed tdong2010/udagram-api-feed
   - docker tag udagram-api-user tdong2010/udagram-api-user
   - docker tag udagram-frontend tdong2010/udagram-frontend
-  - docker tag reverseproxy tdong2010/reverseproxy:v1
+  - docker tag reverseproxy tdong2010/reverseproxy
   - echo 'docker images tagged'
   - docker push tdong2010/udagram-api-feed
   - docker push tdong2010/udagram-api-user
