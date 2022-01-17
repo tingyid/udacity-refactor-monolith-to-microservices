@@ -29,3 +29,4 @@ install:
   - docker push tdong2010/udagram-frontend:v1
   - docker push tdong2010/reverseproxy:v1
   - echo 'docker images pushed'
+  - docker run --env-file set_env.sh tdong2010/udagram-api-feed:v1
