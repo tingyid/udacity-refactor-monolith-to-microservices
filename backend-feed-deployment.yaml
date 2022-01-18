@@ -5,7 +5,7 @@ metadata:
   labels:
     app: backend-feed
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: backend-feed
@@ -16,7 +16,9 @@ spec:
     spec:
       containers:
       - name: backend-feed
-        image: tdong2010/udagram-api-feed        
+        image: tdong2010/udagram-api-feed:latest   
+        ports: 
+        - containerPort: 8080  
         env:
         - name: AWS_BUCKET
           valueFrom:

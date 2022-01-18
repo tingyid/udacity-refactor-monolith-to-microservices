@@ -16,7 +16,14 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: tdong2010/udagram-frontend:v1
+        image: tdong2010/udagram-frontend:latest
         ports: 
-        - containerPort: 80
+        - containerPort: 8080
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"
+          limits:
+            memory: "1024Mi"
+            cpu: "500m"     
   
