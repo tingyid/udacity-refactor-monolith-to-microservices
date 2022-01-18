@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: backend-user
   labels:
-    run: backend-user
+    service: backend-user
 spec:
   ports:
   - name: "8080"
@@ -11,5 +11,5 @@ spec:
     targetPort: 8080
     protocol: TCP
   selector:
-    run: backend-user
+    service: backend-user
 

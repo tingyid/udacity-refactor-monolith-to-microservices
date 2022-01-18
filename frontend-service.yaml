@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: frontend
   labels:
-    run: frontend
+    service: frontend
 spec:
   ports:
   - name: "8080"
@@ -11,5 +11,5 @@ spec:
     targetPort: 8080
     protocol: TCP
   selector:
-    run: frontend
+    service: frontend
 
