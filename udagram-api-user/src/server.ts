@@ -11,7 +11,7 @@ import {V0_USER_MODELS} from './controllers/v0/model.index';
 
 (async () => {
   //console.debug("Printing configurations");
-  //console.debug(config);
+  //giconsole.debug(config);
 
   await sequelize.addModels(V0_USER_MODELS);
 
