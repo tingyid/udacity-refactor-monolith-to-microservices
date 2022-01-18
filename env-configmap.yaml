@@ -9,4 +9,4 @@ data:
   JWT_SECRET: hello
   POSTGRES_DB: postgres
   POSTGRES_HOST: database.cxebvlsmz4yt.us-east-1.rds.amazonaws.com
-  URL: a162aede499cb4631bd03dc84d87b85a-1428368802.us-east-1.elb.amazonaws.com:8100/api/v0
+  URL: a03e7068a9e824bd387be7c65887656f-992158030.us-east-1.elb.amazonaws.com:8100/api/v0
