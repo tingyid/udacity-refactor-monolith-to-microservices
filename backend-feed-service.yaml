@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: backend-feed
   labels:
-    run: backend-feed
+    service: backend-feed
 spec:
   ports:
   - name: "8080"
@@ -11,5 +11,5 @@ spec:
     targetPort: 8080
     protocol: TCP
   selector:
-    run: backend-feed
+    service: backend-feed
 
